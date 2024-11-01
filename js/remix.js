@@ -1,7 +1,7 @@
 // Create cards for songs and remixes
 function createCards(data, containerId) {
   const container = document.getElementById(containerId);
-  container.innerHTML = ""; // Clear existing cards before adding new ones
+// container.innerHTML = ""; // Clear existing cards before adding new ones
   data.forEach((item) =>
     container.insertAdjacentHTML("beforeend", CreateSongAndRemixHtml(item))
   );

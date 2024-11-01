@@ -30,7 +30,7 @@ function displayTitle(title) {
 // تابع برای ایجاد کارت‌های آهنگ‌ها
 function createCards(data, containerId) {
   const container = document.getElementById(containerId);
-  container.innerHTML = ""; // پاکسازی محتوا
+ // container.innerHTML = ""; // پاکسازی محتوا
   data.forEach((item) => {
     const cardHTML = CreateSongAndRemixHtml(item);
     container.insertAdjacentHTML("beforeend", cardHTML);
